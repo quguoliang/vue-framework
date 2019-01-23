@@ -20,7 +20,7 @@ export default {
 			if (this.second > 0) {
 				this.second -= 1;
 			} else {
-				this.$router.replace({ name: 'index' });
+				this.$router.replace({ name: 'home' });
 			}
 		}, 1000);
 	},
