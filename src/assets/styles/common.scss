@@ -1,0 +1,56 @@
+@import '~normalize.css';
+
+@font-face {
+	font-family: BarlowCondensed;
+	src: url('../fonts/BarlowCondensed-Light.ttf'), url('../fonts/BarlowCondensed-Medium.ttf'), url('../fonts/BarlowCondensed-Regular.ttf');
+}
+@font-face {
+	font-family: FZLTKHK;
+	src: url('../fonts/FZLTKHK.ttf');
+}
+
+@font-face {
+	font-family: FZLTXHJW;
+	src: url('../fonts/FZLTHJW.TTF');
+}
+
+.font-zh {
+	font-family: 'FZLTKHK';
+}
+
+.font-num {
+	font-family: 'BarlowCondensed';
+}
+
+html,
+body {
+	height: 100%;
+	font-family: FZLTKHK, -apple-system, Helvetica Neue, Arial, PingFang SC, Hiragino Sans GB, STHeiti, Microsoft YaHei, Microsoft JhengHei,
+		Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, WenQuanYi Micro Hei,
+		SimSun, sans-serif;
+}
+
+.no-results {
+	color: #909399;
+	font-size: 12px;
+}
+
+.divide-line {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	height: 1px;
+	width: 300px;
+	background-color: #dae1ea;
+}
+
+.red {
+	color: $red;
+}
+
+.mt5 {
+	margin-top: 5px;
+}
+
+.mt10 {
+	margin-top: 5px;
+}
