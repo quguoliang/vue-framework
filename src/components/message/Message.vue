@@ -4,7 +4,7 @@
 			<svg-icon :iconName="type" iconClass="logoIcon"></svg-icon>
 			<div class="content">
 				{{ content }}
-				<svg-icon v-if="isClose" iconName="close" iconClass="close" @click="visible = false"></svg-icon>
+				<svg-icon v-if="isClose" iconName="close" iconClass="close" @click.native="visible = false"></svg-icon>
 			</div>
 		</div>
 	</transition>
