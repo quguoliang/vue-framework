@@ -19,20 +19,21 @@ const keys = r.keys(),
 
 keys.forEach(key => {
 	const component = {
-		name: key.replace(/\.\/|\.vue/g, ''),
+		name: key.replace(/\.\/|\.vue/g, '').toLowerCase(),
 		component: r(key).default,
 	};
+
 	components.push(component);
 
 	//省略默认index后缀时，自动匹配路由
 	if (/.*index$/.test(component.name)) {
-		const name = component.name.replace(/\/index$/, '');
+		const name = component.name.replace(/index$/, '');
 		components.push({ ...component, name });
 	}
 });
-const home = components.find(item => item.name === 'Index').component;
-const error = components.find(item => item.name === '404').component;
-
+const Home = components.find(item => item.name === 'index').component;
+const Error = components.find(item => item.name === '404').component;
+console.log(components);
 // console.log('components', components);
 const routes = components.map(item => {
 	return {
@@ -46,12 +47,12 @@ routes.unshift(
 	{
 		path: '/',
 		name: 'home',
-		component: home,
+		component: Home,
 	},
 	{
 		path: '*',
 		name: 'error',
-		component: error,
+		component: Error,
 	}
 );
 

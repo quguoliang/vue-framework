@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-	name: 'message',
+	name: 'Message',
 	data() {
 		return {
 			content: '这是一条普通的消息',
