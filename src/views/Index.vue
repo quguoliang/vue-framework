@@ -13,7 +13,7 @@ export default {
 		this.$message({
 			content: '哈哈，这是一条成功的消息',
 			timeOut: 4000,
-			isClose: false,
+			isClose: true,
 			type: 'success',
 		});
 	},
