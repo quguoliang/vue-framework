@@ -97,7 +97,7 @@
     本框架并未涉及单元测试，如有需要请自行添加
 
 ### 编译部署
-    并未涉及，以后会补充:)
+    只需要在publish.js中添加你的主机信息即可，运行yarn run publish
 
 ### 运行与构建
     "build": "vue-cli-service build",
