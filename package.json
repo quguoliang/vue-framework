@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vue-cli-service build",
+    "publish": "node ./publish.js",
     "test": "vue-cli-service serve --project-mode test",
     "lint": "vue-cli-service lint",
     "build:dev": "vue-cli-service build --project-mode dev",
@@ -18,6 +19,7 @@
     "axios": "^0.18.0",
     "js-cookie": "^2.2.0",
     "nprogress": "^0.2.0",
+    "scp2": "^0.5.0",
     "style-resources-loader": "^1.2.1",
     "svg-baker-runtime": "^1.4.0",
     "vue": "^2.5.21",

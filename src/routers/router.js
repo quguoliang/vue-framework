@@ -33,7 +33,7 @@ keys.forEach(key => {
 });
 const Home = components.find(item => item.name === 'index').component;
 const Error = components.find(item => item.name === '404').component;
-console.log(components);
+
 // console.log('components', components);
 const routes = components.map(item => {
 	return {
@@ -58,7 +58,7 @@ routes.unshift(
 
 //使用webpack动态加载机制，重构路由文件加载方式
 const router = new Router({
-	mode: 'history',
+	mode: 'hash',
 	base: '/',
 	routes,
 });

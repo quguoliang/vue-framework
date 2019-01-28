@@ -14,6 +14,7 @@ function addStyleResource(rule) {
 module.exports = {
 	outputDir: 'dist',
 	lintOnSave: false,
+	baseUrl: './',
 	chainWebpack: config => {
 		config.resolve.alias
 			.set('@', resolve('src'))
